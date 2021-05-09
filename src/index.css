@@ -1,13 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+
 body {
+  font-family: "Saira", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  will-change: transform !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container {
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.small-text {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
+  font-weight: bold;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 59%);
+}
+.normal-text {
+  font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1600 - 320)));
+  font-weight: bold;
+}
+
+.main-text {
+  font-size: calc(28px + (32 - 28) * ((100vw - 320px) / (1600 - 320)));
+  font-weight: bold;
+}
+
+/* form css */
+.input-box {
+  border-radius: 15px 1px 1px 15px;
+  padding: 14px;
+  width: 60vh;
+  border: none;
+}
+.submit-btn {
+  padding: 15px;
+  border: none;
+  background-color: black;
+  border-radius: 1px 15px 15px 1px;
+  width: 7vh;
+}
+.submit-btn:hover {
+  background-color: hsl(0, 0%, 17%);
+}
+@media screen and (max-width: 650px) {
+  .input-box {
+    width: 35vh;
+  }
+  .submit-btn {
+    width: 7vh;
+  }
+}
+
+/* display container css*/
+.display-container {
+  z-index: 2;
+  background: white;
+  top: 25vh;
+  padding: 4vh;
+  border-radius: 2vh;
+  filter: drop-shadow(0 0 5px hsl(0, 0%, 59%));
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+  left: 12%;
+}
+
+.divider {
+  border-left: 1px solid hsl(0, 0%, 59%);
+  height: 10vh;
+  margin: 0px 2vh;
+}
+
+@media screen and (min-width: 679px) and (max-width: 1000px) {
+  .display-container {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .display-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 3vh;
+    left: 12%;
+  }
+  .display-container > * {
+    padding: 1vh 0vh;
+  }
+  .divider {
+    display: none;
+  }
 }
