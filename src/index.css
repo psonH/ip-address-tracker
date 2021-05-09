@@ -15,7 +15,6 @@ body {
   height: 30vh;
   background-position: center;
   background-size: cover;
-  position: relative;
   z-index: 0;
 }
 
