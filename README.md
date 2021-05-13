@@ -1,4 +1,4 @@
-# Frontend Mentor - IP address tracker
+# IP address tracker in React JS
 
 [Check out the project here!!](https://ip-tracker-pson.netlify.app/)
 
