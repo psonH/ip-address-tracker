@@ -101,3 +101,21 @@ body {
     display: none;
   }
 }
+
+@media screen and (max-height: 500px) {
+  .display-container {
+    top: 43vh;
+  }
+  .main-container {
+    height: 50vh;
+  }
+  .leaflet-container {
+    height: 60vh;
+  }
+  .input-box {
+    width: 60vh;
+  }
+  .submit-btn {
+    width: 10vh;
+  }
+}
